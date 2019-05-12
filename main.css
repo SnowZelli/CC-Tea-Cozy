@@ -10,7 +10,6 @@ body {
 .header {
     width: 100%;
     height: 69px;
-    display: block;
     position: fixed;
     border-bottom: 1px solid seashell;
 }
@@ -19,7 +18,7 @@ body {
     float: left;
     height: 50px;
     padding-left: 10px;
-    padding-top: 10px; /* couldn't figure out how to center this vertically within the div so I added padding */
+    padding-top: 10px; /* See number 1 in bugs */
 }
 
 .navigation {
@@ -32,4 +31,84 @@ body {
     display: inline;
     text-decoration: underline;
     padding: 20px;
+    color: seashell;
 }
+
+.mission-container {
+    position: relative;
+    margin: auto;
+    top: 70px; /* See number 2 in bugs */
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mission {
+    background-color: black;
+    width: 1200px;
+}
+
+.tea-header {
+    position: relative;
+    margin: auto;
+    top: 70px; /* See number 2 in bugs */
+    width: 1000px;
+}
+
+.tea-container {
+    position: relative;
+    margin: auto;
+    top: 70px; /* See number 2 in bugs */
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-start;
+}
+
+.tea-container img {
+    width: 300px;
+    height: 200px;
+}
+
+.location-wrapper {
+    position: relative;
+    margin: auto;
+    top: 70px; /* See number 2 in bugs */
+    height: 500px;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.location-container {
+    position: relative;
+    margin: auto;
+    top: 70px; /* See number 2 in bugs */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 720px) {
+    /* do something */
+}
+
+/* 
+Bugs:
+1. Couldn't figure out how to center this vertically within the div so I added padding.
+2. Figure out how to fix the top: 70px hack. I am pushing all elements after the .header element down 70px because I couldn't solve the fixed problem.
+3. The header is not on top. Z-Index didn't appear to solve it.
+4. Text in .tea-container seems far away from the picture compared to the mockup.
+*/
