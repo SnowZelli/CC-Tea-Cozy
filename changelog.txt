@@ -1,0 +1,12 @@
+v0.0.3
+
+1. Fixed the scrolling issue.
+2. Added a body container to fix the duplicate code.
+3. Added ids for proper page linking.
+
+Known Bugs:
+-Text in .tea-container seems far away from the picture compared to the mockup.
+-A lot of my spacing in the bottom half of the page doesn't line up with the mockup.
+-HTML anchor not offsetting to account for the fixed header.
+
+Mockup for Reference: https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-tea-cozy-redline.jpg
